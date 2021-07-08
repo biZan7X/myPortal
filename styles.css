@@ -99,11 +99,12 @@ li{
     flex-wrap: wrap;
     max-height: 100%;
     overflow: auto;
+    padding: auto;
 }
 
 .Card{
-    height: 60%;
-    width: 30%;
+    height: 500px;
+    width: 370px;
     background-color: white;
     filter: drop-shadow(5px 5px 10px grey);
     margin: 1.5rem 1rem;
