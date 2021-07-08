@@ -269,6 +269,29 @@ li{
     border-radius: 0.4rem;
 }
 
+/* ACTIVITY CARD: Birthdays-------------------------------------*/
+
+.day{
+    padding: 1rem;
+    border-bottom: grey solid 1px;
+}
+
+.birthday-guy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.birthdayPic{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.icon{
+    font-size: xx-large;
+}
+
 *::-webkit-scrollbar {
 	width: 4px;
 }
