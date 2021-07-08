@@ -31,6 +31,8 @@
     display: flex;
     flex-direction: column;
     border-right:grey solid 1.5px;
+    position: relative;
+    transition: all 0.5s ease-in;
 }
 
 /* sidebar INFO-------------------------------------- */
@@ -293,6 +295,28 @@ li{
     font-size: xx-large;
 }
 
+/* menu button--------------------------------------------------*/
+.Menu{
+    position: absolute;
+    margin: 1rem;
+    border: var(--primaryColor) solid 3px;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.Menu2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    border: var(--primaryColor) solid 3px;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: -1;
+}
 *::-webkit-scrollbar {
 	width: 4px;
 }
@@ -305,3 +329,48 @@ li{
 	border: transparent;
 }
 
+
+/* mobile view--------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .app{
+        position: relative;
+    }
+	.sideBar{
+        width: 0%;
+        overflow: hidden;
+    }
+
+    .myImage{
+        height: 50%;
+    }
+
+    .activityCards{
+        width: 100%;
+        position: static;
+    }
+
+    .Menu{
+        position: static;
+        z-index: 1;
+    }
+
+    .Menu2{
+        z-index: 1;
+    }
+
+    .sideBarView{
+        width: 100%;
+    }
+
+    .activityView{
+        width: 0%;
+    }
+
+    .menuview{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+}
